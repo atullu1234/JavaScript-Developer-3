@@ -1,19 +1,42 @@
+const timeoutID = document.getElementById("timeout");
+const clearTimeoutID = document.getElementById("clear-timeout");
+
+const intervalID = document.getElementById("interval");
+const clearIntervalID = document.getElementById("clear-interval");
+
 /* Timeouts */
-//let timeoutID = setTimeout(bye, 3000);
+timeoutID.addEventListener("click", () => {
+  setTimeout(bye, 3000);
 
-// console.log("hello");
+  console.log("hello");
 
-/* Clearign timeout */
-//clearTimeout(timeoutID);
+  function bye() {
+    console.log("goodbye");
+  }
+});
 
-/* function bye() {
+/* Clear Timeouts */
+let stopT = setTimeout(bye, 3000);
+clearTimeout(stopT);
+
+console.log("hello");
+
+function bye() {
   console.log("goodbye");
-} */
+}
 
 /* Intervals */
-const intervalID = document.getElementById("interval");
-
 intervalID.addEventListener("click", () => {
+  let count = 0;
+  setInterval(counter, 1000);
+
+  function counter() {
+    console.log(++count);
+  }
+});
+
+/* Clear Intervals */
+clearIntervalID.addEventListener("click", () => {
   let count = 0;
   setInterval(counter, 1000);
 
