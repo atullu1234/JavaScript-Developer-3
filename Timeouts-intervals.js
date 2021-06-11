@@ -11,6 +11,7 @@
 } */
 
 /* Intervals */
+const intervalID = document.getElementById("interval");
 let count = 0;
 let intervalId = setInterval(counter, 1000);
 
