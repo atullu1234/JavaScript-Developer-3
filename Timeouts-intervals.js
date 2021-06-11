@@ -12,9 +12,12 @@
 
 /* Intervals */
 const intervalID = document.getElementById("interval");
-let count = 0;
-let intervalId = setInterval(counter, 1000);
 
-function counter() {
-  console.log(++count);
-}
+intervalID.addEventListener("click", () => {
+  let count = 0;
+  setInterval(counter, 1000);
+
+  function counter() {
+    console.log(++count);
+  }
+});
