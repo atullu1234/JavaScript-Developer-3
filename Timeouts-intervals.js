@@ -3,6 +3,7 @@ const clearTimeoutID = document.getElementById("clear-timeout");
 
 const intervalID = document.getElementById("interval");
 const clearIntervalID = document.getElementById("clear-interval");
+var counterValue;
 
 /* Timeouts */
 timeoutID.addEventListener("click", () => {
@@ -28,7 +29,7 @@ function bye() {
 /* Intervals */
 intervalID.addEventListener("click", () => {
   let count = 0;
-  setInterval(counter, 1000);
+  counterValue = setInterval(counter, 1000);
 
   function counter() {
     console.log(++count);
@@ -37,10 +38,7 @@ intervalID.addEventListener("click", () => {
 
 /* Clear Intervals */
 clearIntervalID.addEventListener("click", () => {
-  let count = 0;
-  setInterval(counter, 1000);
-
-  function counter() {
-    console.log(++count);
-  }
+  //function counter() {
+  // console.log(++count);
+  clearInterval(counterValue);
 });
