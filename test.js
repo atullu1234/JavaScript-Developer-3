@@ -1,8 +1,22 @@
-let stopT = setTimeout(bye, 3000);
-clearTimeout(stopT);
-
-console.log("hello");
-
-function bye() {
-  console.log("goodbye");
-}
+let alumni = `[
+  {
+    "name": "Abbu",
+    "age": 20,
+    "job": "front end developer",
+    "isActive": true,
+    "hobbies": ["Working out", "gaming", "pc building", "coding"],
+    "friends": [
+      {
+        "name": "AJ",
+        "age": 18,
+        "job": "Entrepreneur",
+      },
+      {
+        "name": "Abdulkahar",
+        "age": 19,
+        "job": "Security guard",
+      },
+    ],
+  },
+]`;
+console.log(JSON.parse(alumni));

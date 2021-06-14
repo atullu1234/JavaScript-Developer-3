@@ -1,7 +1,7 @@
 let student = `{
   "name": "Johnny",
   "age": 19,
-  "isActive": true,
+  "isActive": true
 }`;
 console.log(JSON.parse(student));
 
@@ -11,7 +11,7 @@ let alumni = `[
     "age": 20,
     "job": "front end developer",
     "isActive": true,
-    "hobbies": ["Working out, gaming, pc building", "coding"],
+    "hobbies": ["Working out", "gaming", "pc building", "coding"],
     "friends": [
       {
         "name": "AJ",
