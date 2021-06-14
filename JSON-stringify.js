@@ -26,7 +26,7 @@ const alumni = [
   },
 ];
 
-// converts student and alumni object to string below
+// converts student and alumni JSON object to string below
 const studentOTS = JSON.stringify(student);
 const alumniOTS = JSON.stringify(alumni);
 

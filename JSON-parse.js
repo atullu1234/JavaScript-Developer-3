@@ -16,14 +16,14 @@ let alumni = `[
       {
         "name": "AJ",
         "age": 18,
-        "job": "Entrepreneur",
+        "job": "Entrepreneur"
       },
       {
         "name": "Abdulkahar",
         "age": 19,
-        "job": "Security guard",
-      },
-    ],
-  },
+        "job": "Security guard"
+      }
+    ]
+  }
 ]`;
 console.log(JSON.parse(alumni));
