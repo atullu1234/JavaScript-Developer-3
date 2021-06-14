@@ -1,22 +1,18 @@
-let alumni = `[
-  {
-    "name": "Abbu",
-    "age": 20,
-    "job": "front end developer",
-    "isActive": true,
-    "hobbies": ["Working out", "gaming", "pc building", "coding"],
-    "friends": [
-      {
-        "name": "AJ",
-        "age": 18,
-        "job": "Entrepreneur",
-      },
-      {
-        "name": "Abdulkahar",
-        "age": 19,
-        "job": "Security guard",
-      },
-    ],
-  },
-]`;
-console.log(JSON.parse(alumni));
+function makeRequest(location) {
+  return new Promise((resolve, reject) => {
+    console.log(`Making request to ${location}`);
+    if (location === `Google`) {
+      resolve(`Google says hi`);
+    } else {
+      reject(`We can only talk to Google`);
+    }
+  });
+}
+
+async function doWork() {
+  const response = await makeRequest("Google");
+  console.log("Response received");
+  const processedResponse = await processRequest(response);
+  console.log(processedResponse);
+}
+doWork();
