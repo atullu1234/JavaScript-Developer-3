@@ -33,7 +33,7 @@ console.log(evens);
 
 let numbersO = [1, 2, 3, 4, 5, 6, 7, 8];
 let odds = numbersO.filter(function (item) {
-  return item % 2 === 1;
+  return item % 2 !== 0;
 });
 console.log(odds);
 
@@ -43,7 +43,7 @@ let sum = [1, 2, 3].reduce(function (result, item) {
 }, 0);
 console.log(sum);
 
-// some (answers whether or not at leat one of the items are true or false based what's given)
+// some (answers whether or not at leat one of the items are true based what's given)
 let hasNegativeNumbers = [1, 2, 3, -1, 4].some(function (item) {
   return item < 0;
 });

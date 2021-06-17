@@ -39,3 +39,12 @@ async function doWork() {
   }
 }
 doWork();
+
+/* First object in the json doc
+{
+  "name": "Johnny",
+  "age": 19,
+  "isActive": true,
+  "whatIsJSON": "JavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax."
+}
+*/

@@ -16,7 +16,7 @@ function processRequest(response) {
   });
 }
 
-/*makeRequest("Google")
+/* makeRequest("Google")
   .then((response) => {
     console.log("Response received");
     return processRequest(response);
@@ -26,11 +26,11 @@ function processRequest(response) {
   })
   .catch((err) => {
     console.log(err);
-  });*/
+  }); */
 
 async function doWork() {
   try {
-    const response = await makeRequest(`Facebook`);
+    const response = await makeRequest(`Google`);
     console.log(`Response received`);
     const processedResponse = await processRequest(response);
     console.log(processedResponse);

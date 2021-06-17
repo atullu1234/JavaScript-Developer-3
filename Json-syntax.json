@@ -1,9 +1,3 @@
-{ 
-  "name": "Johnny",
-  "age": 19,
-  "isActive": true,
-}
-
 [
   {
     "name": "Abbu",
@@ -15,13 +9,13 @@
       {
         "name": "AJ",
         "age": 18,
-        "job": "Entrepreneur",
+        "job": "Entrepreneur"
       },
       {
         "name": "Abdulkahar",
         "age": 19,
-        "job": "Security guard",
-      },
-    ],
-  },
+        "job": "Security guard"
+      }
+    ]
+  }
 ]
